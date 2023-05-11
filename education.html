@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/test.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script type="text/javascript">
+      function toggleMenu() {
+          var display = $(".f-menu").css("display");
+          if (display == "none") {
+              $(".f-menu").css("display", "flex");
+          }
+          else if (display == "flex") {
+              $(".f-menu").css("display", "none");
+          }
+      }
+      $(window).resize(function () {
+          var windowsize = window.width();
+          //alert(windowsize);
+          if (windowsize > 640) {
+              var display = $(".f-menu").css("display");
+             
+              if (display == "none") {
+                  $(".f-menu").css("display", "flex");
+              }
+          }
+      });
+  </script>
+  </head>
+  <body class="metro">
+
+    <div id="ToggleButton" onclick="toggleMenu()">
+        <div style="font-size: 3em;color:Tomato;text-align:left;background-color:Gray;padding-left:10px">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <h2 class="text bg center">Serach for a match</h2>
+    <div class="flexing">
+    <div>
+
+    <section id="mySidebar" class="sidebar f-menu block-shadow-impact" >
+     
+        <div class="bet">
+            <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="./quick.html">QUICK</a>
+        </div>
+        <div>
+        <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        </div>
+        <div class="bet">
+            <div>
+            <i class="fa-solid fa-star-and-crescent"></i>
+        <a href="./religion.html">RELEGION</a>
+        </div>
+        <div>
+        <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        </div>
+        <div class="bet">
+            <div>
+        <i class="fa-solid fa-user-graduate"></i>
+        <a href="./education.html">EDUCATION</a>
+        </div>
+        <div>
+        <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        </div>
+        <div class="bet">
+        <div>
+        <i class="fa-sharp fa-solid fa-user"></i>
+        <a href="./personal.html">PERSONAL</a>
+        </div>
+        <div>
+        <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        </div>
+        <div class="bet">
+            <div>
+        <i class=" fas fa-light fa-users-rectangle"></i>
+        
+        <a href="./profession.html">PROFSSION</a>
+        </div>
+        <div>
+        <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        </div>
+        <div class="bet">
+        <div>
+        <i class="fa-solid fa-at"></i>
+        <a href="./username.html">USERNAME</a>
+        </div>
+        <div>
+        <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        </div>
+         </section>
+      </div>
+       <div class="side"> 
+      <h5 class="text">Education</h5>
+<div class="line"></div>
+<div class="bet1">
+  <p class="margining">First language(s)</p>
+  <input type="text" class="its" placeholder="Select your option"> </div>
+<div class="bet1">
+  <p class="margining1">Second language(s)</p>
+  <input type="text" class="its" placeholder="Select your option"> </div>
+
+<div class="bet1">
+  <p class="margining12">  Edcation level</p>
+  <input type="text" class="its" placeholder="Select your option"> </div>
+<div class="bet1">
+  <p class="margining"> Current income</p>
+  <input type="text" class="its" placeholder="Select your option"> </div>
+<div class="bet1">
+  <p class="margining123"> Profession</p>
+  <input type="text" class="its" placeholder="Select your option"> </div>
+  <div class="bet1 mr ">
+    <i class="fa-solid fa-plus blue mt-1 ml-2"></i>
+    <p class="blue">Add more criteria</p>
+
+  </div>
+    <div class="btn1">
+      <button type="button" class="btn btn-success ">Search now</button>
+    </div>
+    </div>
+      </div>
+ <!-- <h1>username</h1> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
